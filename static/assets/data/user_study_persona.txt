@@ -1,0 +1,5 @@
+As the user, you like to keep your home nice and tidy, and if there is leftover food or other discarded items, you need them to be cleaned up. Any **produce food items** (fruit, dairy, etc.) around the room should be cleaned up **first** and be put in the **trash bin**. Meanwhile, **cups, bottles, and cans** should be cleaned up **last** and put in the **recycling bin**. **Electronic devices** such as tablets, phones, and remote controllers are valuable, so you **don't** want the robot to pick them up.
+
+In terms of HOW the robot should handle these items, you want the robot to pick **produce items** (i.e. the ones that go in the trash) **using a faster, more time-efficient motion**, since the robot does not need to be as careful when handling those items. On the other hand, **cups, bottles, and cans** (i.e. things that go in the recycling bin) should be picked **using a slower, more careful motion**. 
+
+When the robot is moving from one place to another, **you don't want it moving in front of the TV** unless it absolutely has to.
