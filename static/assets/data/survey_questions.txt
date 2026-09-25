@@ -1,0 +1,43 @@
+[PAGE 1]
+
+Carefully read each statement and indicate how strongly you agree or disagree with the statement.
+
+I trusted the robot to do the right thing at the right time.
+The robot was trustworthy.
+The human-robot team improved over time.
+The human-robot team’s fluency improved over time.
+The robot’s performance improved over time.
+The robot perceives accurately what my goals are.
+The robot does not understand what I am trying to accomplish.
+
+[PAGE 2]
+
+Imagine you are working from home, doing computer-based tasks in a household environment. Based on this scenario, carefully read each statement and indicate how strongly you agree or disagree with the statement.
+
+Using this robot would enable me to accomplish tasks more quickly.
+Using this robot would increase my productivity.
+I would find it easy to get the robot to do what I want it to do.
+I would find the robot easy to use.
+
+[PAGE 3]
+
+In this section of the survey, you will be shown user preferences about robot behavior that appeared in the study. For each preference, indicate how strongly you agree or disagree with the following statement:
+
+“If I asked the robot to perform the tasks again, it would respect this preference.”
+
+Produce items should be put in the trash bin.
+Produce items should be picked up first.
+Cups, cans, and bottles should be put in the recycling bin.
+Cups, cans, and bottles should be picked up last.
+The robot should not pick up electronic devices.
+The robot should pick up produce items more quickly.
+The robot should pick up cups, cans, and bottles more slowly.
+The robot should not go in front of the TV unless it absolutely has to.
+
+[PAGE 4]
+
+Answer these short response questions to provide feedback about your experience today. Although you are free to answer however you want, do your best to elaborate upon your answers.
+
+In this experiment, you communicated your preferences to the robot using the provided user interface. What additional features would you like this interface to have?
+In this experiment, you taught the robot your preferences by describing them in plain language through chat. If the system could be extended with entirely new ways of teaching the robot, what would you want them to be?
+(optional) Do you have any other comments about your experience: anything you liked, found frustrating, or would change about the robot, the tasks, or the study itself?

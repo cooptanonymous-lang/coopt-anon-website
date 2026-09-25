@@ -32,13 +32,14 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/assets/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="./static/js/survey.js"></script>
 </head>
 <body>
 
@@ -59,6 +60,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">CO-OPT: Lifelong Learning of Object-Oriented Preferences for Personalized Robotic Assistance</h1>
+          <h3 class="title is-4 conference-authors">Under Review</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="">Anonymous Authors</a>
@@ -94,6 +96,151 @@
     <br>
   </div>
 
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-3">Supplementary Experimental Details</h2>
+
+        <p>
+          In this section, we provide additional details regarding our experiments for reproducibility purposes.
+        </p>
+        
+        <br/>
+
+        <!-- <h3 class="title is-4">Simulation Experiments</h3>
+        <p>
+          TODO: Searchable object database, information on personas
+        </p>
+
+        <br/> -->
+
+        <h3 class="title is-4">Real-World User Studies</h3>
+        <p>
+          In this section, we give more information on the real-world user studies ran in our lab environment.
+        </p>
+
+        <br/>
+
+        <h4 class="title is-5">User Study Demonstration</h3>
+        <p>
+          Here is an example runthrough of one environment from our user study with the user interface shown. In our study, participants completed a sequence of four environments total.
+        </p>
+
+        <video class="study-video" controls preload="metadata" playsinline
+               width="1920" height="1080">
+          <source src="./static/assets/videos/user_study.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          <a href="./static/assets/videos/user_study.mp4">Download the demonstration video.</a>
+        </video>
+
+        <br/>
+
+        <h4 class="title is-5">Post-Experiment Survey Questions</h3>
+        <p>
+          Below were the questions used in the post-experiment survey taken by the participants at the end of the study. For pages 1 to 3, participants scored each item on a scale from 1 (Strongly Disagree) to 7 (Strongly Agree).
+        </p>
+
+        <br/>
+
+        <div id="survey-viewer" class="survey-viewer box">
+
+          <div class="survey-header">
+            <h4 id="survey-page-title" class="title is-5">Page 1 of 4</h4>
+            <nav id="survey-nav" class="pagination is-small is-centered"
+                 role="navigation" aria-label="survey pagination">
+              <button id="survey-prev" class="pagination-previous">Previous</button>
+              <ul id="survey-pages" class="pagination-list"></ul>
+              <button id="survey-next" class="pagination-next">Next</button>
+            </nav>
+          </div>
+
+          <div class="survey-page" data-survey-page="1">
+            <p>
+              Carefully read each statement and indicate how strongly you agree or disagree with
+              the statement.
+            </p>
+            <ol class="survey-questions">
+              <li>I trusted the robot to do the right thing at the right time.</li>
+              <li>The robot was trustworthy.</li>
+              <li>The human-robot team improved over time.</li>
+              <li>The human-robot team&rsquo;s fluency improved over time.</li>
+              <li>The robot&rsquo;s performance improved over time.</li>
+              <li>The robot perceives accurately what my goals are.</li>
+              <li>The robot does not understand what I am trying to accomplish.</li>
+            </ol>
+          </div>
+
+          <div class="survey-page is-hidden" data-survey-page="2">
+            <p>
+              Imagine you are working from home, doing computer-based tasks in a household
+              environment. Based on this scenario, carefully read each statement and indicate how
+              strongly you agree or disagree with the statement.
+            </p>
+            <ol class="survey-questions">
+              <li>Using this robot would enable me to accomplish tasks more quickly.</li>
+              <li>Using this robot would increase my productivity.</li>
+              <li>I would find it easy to get the robot to do what I want it to do.</li>
+              <li>I would find the robot easy to use.</li>
+            </ol>
+          </div>
+
+          <div class="survey-page is-hidden" data-survey-page="3">
+            <p>
+              In this section of the survey, you will be shown user preferences about robot
+              behavior that appeared in the study. For each preference, indicate how strongly you
+              agree or disagree with the following statement:
+            </p>
+            <p>
+              &ldquo;If I asked the robot to perform the tasks again, it would respect this
+              preference.&rdquo;
+            </p>
+            <ol class="survey-questions">
+              <li>Produce items should be put in the trash bin.</li>
+              <li>Produce items should be picked up first.</li>
+              <li>Cups, cans, and bottles should be put in the recycling bin.</li>
+              <li>Cups, cans, and bottles should be picked up last.</li>
+              <li>The robot should not pick up electronic devices.</li>
+              <li>The robot should pick up produce items more quickly.</li>
+              <li>The robot should pick up cups, cans, and bottles more slowly.</li>
+              <li>The robot should not go in front of the TV unless it absolutely has to.</li>
+            </ol>
+          </div>
+
+          <div class="survey-page is-hidden" data-survey-page="4">
+            <p>
+              Answer these short response questions to provide feedback about your experience
+              today. Although you are free to answer however you want, do your best to elaborate
+              upon your answers.
+            </p>
+            <ol class="survey-questions">
+              <li>
+                In this experiment, you communicated your preferences to the robot using the
+                provided user interface. What additional features would you like this interface
+                to have?
+              </li>
+              <li>
+                In this experiment, you taught the robot your preferences by describing them in
+                plain language through chat. If the system could be extended with entirely new
+                ways of teaching the robot, what would you want them to be?
+              </li>
+              <li>
+                (optional) Do you have any other comments about your experience: anything you
+                liked, found frustrating, or would change about the robot, the tasks, or the
+                study itself?
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
