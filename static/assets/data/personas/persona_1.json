@@ -1,0 +1,186 @@
+{
+    "high_level": {
+        "cleanup_receptacles": [
+            {
+                "categories": ["clothing"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["footwear"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["accessories"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["dinnerware"],
+                "receptacle": "top kitchen cabinet shelf"
+            },
+            {
+                "categories": ["cookware"],
+                "receptacle": "bottom kitchen cabinet shelf"
+            },
+            {
+                "categories": ["food"],
+                "receptacle": "trash bin"
+            },
+            {
+                "categories": ["drinks"],
+                "receptacle": "trash bin"
+            },
+            {
+                "categories": ["entertainment"],
+                "receptacle": "cardboard box"
+            },
+            {
+                "categories": ["electronics"],
+                "receptacle": null
+            },
+            {
+                "categories": ["work supplies"],
+                "receptacle": "left tv stand drawer"
+            },
+            {
+                "categories": ["paper media"],
+                "receptacle": "bookshelf"
+            },
+            {
+                "categories": ["tools"],
+                "receptacle": null
+            },
+            {
+                "categories": ["cleaning supplies"],
+                "receptacle": "bottom kitchen cabinet shelf"
+            },
+            {
+                "categories": ["personal care"],
+                "receptacle": null
+            },
+            {
+                "categories": ["linens"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["sports equipment"],
+                "receptacle": "cardboard box"
+            },
+            {
+                "categories": ["containers"],
+                "receptacle": null
+            },
+            {
+                "categories": ["decor"],
+                "receptacle": "bottom cabinet drawer"
+            },
+            {
+                "categories": ["pet supplies"],
+                "receptacle": "cardboard box"
+            }
+        ]
+    },
+    "low_level": {
+        "pick": [
+            {
+                "categories": ["clothing"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["footwear"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["accessories"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["dinnerware"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["cookware"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["food"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["drinks"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["entertainment"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["electronics"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["work supplies"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["paper media"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["tools"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["cleaning supplies"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["personal care"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["linens"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["sports equipment"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["containers"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["decor"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["pet supplies"],
+                "grasp_type": "top"
+            }
+        ],
+        "place": [
+            {
+                "categories": ["fragile"],
+                "place_type": "gentle"
+            },
+            {
+                "negative_categories": ["fragile"],
+                "place_type": "drop"
+            }
+        ],
+        "goto": [
+            {
+                "categories": ["messy"],
+                "node": 20
+            },
+            {
+                "categories": ["sharp"],
+                "node": 51
+            },
+            {
+                "negative_categories": ["messy", "sharp"],
+                "node": null
+            }
+        ]
+    }
+}

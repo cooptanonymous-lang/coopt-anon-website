@@ -1,0 +1,420 @@
+{
+    "high_level": {
+        "cleanup_receptacles": [
+            {
+                "categories": ["underwear"],
+                "negative_categories": ["formal wear"],
+                "receptacle": "top wardrobe drawer"
+            },
+            {
+                "categories": ["socks", "casual wear"],
+                "receptacle": "hamper"
+            },
+            {
+                "categories": ["sweaters"],
+                "receptacle": "middle wardrobe drawer"
+            },
+            {
+                "categories": ["shirts"],
+                "negative_categories": ["formal wear"],
+                "receptacle": "middle wardrobe drawer"
+            },
+            {
+                "categories": ["shorts"],
+                "negative_categories": ["formal wear"],
+                "receptacle": "hamper"
+            },
+            {
+                "categories": ["pants"],
+                "negative_categories": ["formal wear"],
+                "receptacle": "bottom wardrobe drawer"
+            },
+            {
+                "categories": ["skirts and dresses"],
+                "negative_categories": ["formal wear"],
+                "receptacle": "bottom wardrobe drawer"
+            },
+            {
+                "categories": ["jackets"],
+                "negative_categories": ["formal wear"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["pajamas"],
+                "receptacle": "top wardrobe drawer"
+            },
+            {
+                "categories": ["formal wear"],
+                "negative_categories": ["jewelry"],
+                "receptacle": "cardboard box"
+            },
+            {
+                "categories": ["footwear", "activewear"],
+                "negative_categories": ["sneakers"],
+                "receptacle": "cardboard box"
+            },
+            {
+                "categories": ["sneakers"],
+                "receptacle": null
+            },
+            {
+                "categories": ["boots"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["eyewear", "fragile"],
+                "receptacle": null
+            },
+            {
+                "categories": ["headwear"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["jewelry"],
+                "receptacle": "left desk drawer"
+            },
+            {
+                "categories": ["dinnerware", "utensils"],
+                "negative_categories": ["disposable"],
+                "receptacle": "left kitchen drawer"
+            },
+            {
+                "categories": ["plates"],
+                "negative_categories": ["disposable"],
+                "receptacle": "bottom kitchen cabinet shelf"
+            },
+            {
+                "categories": ["bowls"],
+                "negative_categories": ["disposable"],
+                "receptacle": "middle kitchen cabinet shelf"
+            },
+            {
+                "categories": ["drinkware"],
+                "negative_categories": ["disposable"],
+                "receptacle": "middle kitchen cabinet shelf"
+            },
+            {
+                "categories": ["serveware"],
+                "negative_categories": ["disposable"],
+                "receptacle": "top kitchen cabinet shelf"
+            },
+            {
+                "categories": ["dinnerware", "disposable"],
+                "receptacle": "recycling bin"
+            },
+            {
+                "categories": ["pans"],
+                "negative_categories": ["heavy"],
+                "receptacle": "middle kitchen cabinet shelf"
+            },
+            {
+                "categories": ["pots"],
+                "negative_categories": ["heavy"],
+                "receptacle": "top kitchen cabinet shelf"
+            },
+            {
+                "categories": ["bakeware"],
+                "negative_categories": ["heavy"],
+                "receptacle": "bottom kitchen cabinet shelf"
+            },
+            {
+                "categories": ["cookware", "utensils"],
+                "negative_categories": ["heavy"],
+                "receptacle": "right kitchen drawer"
+            },
+            {
+                "categories": ["cookware", "heavy"],
+                "receptacle": null
+            },
+            {
+                "categories": ["snacks"],
+                "negative_categories": ["disposable"],
+                "receptacle": "pantry"
+            },
+            {
+                "categories": ["produce"],
+                "negative_categories": ["disposable"],
+                "receptacle": "fridge"
+            },
+            {
+                "categories": ["pantry staples"],
+                "negative_categories": ["disposable"],
+                "receptacle": "pantry"
+            },
+            {
+                "categories": ["food", "disposable"],
+                "receptacle": "trash bin"
+            },
+            {
+                "categories": ["drinks"],
+                "negative_categories": ["disposable"],
+                "receptacle": "fridge"
+            },
+            {
+                "categories": ["drinks", "disposable"],
+                "receptacle": "recycling bin"
+            },
+            {
+                "categories": ["toys"],
+                "receptacle": "nightstand drawer"
+            },
+            {
+                "categories": ["games"],
+                "receptacle": null
+            },
+            {
+                "categories": ["electronics"],
+                "receptacle": "plastic bin"
+            },
+            {
+                "categories": ["office supplies"],
+                "receptacle": "left desk drawer"
+            },
+            {
+                "categories": ["art supplies"],
+                "receptacle": "right desk drawer"
+            },
+            {
+                "categories": ["paper media"],
+                "negative_categories": ["heavy"],
+                "receptacle": "bookshelf"
+            },
+            {
+                "categories": ["paper media", "heavy"],
+                "receptacle": null
+            },
+            {
+                "categories": ["tools"],
+                "receptacle": "garage shelf"
+            },
+            {
+                "categories": ["cleaning supplies"],
+                "receptacle": "closet"
+            },
+            {
+                "categories": ["personal care"],
+                "receptacle": "linen cabinet"
+            },
+            {
+                "categories": ["linens"],
+                "receptacle": "linen cabinet"
+            },
+            {
+                "categories": ["sports equipment"],
+                "receptacle": null
+            },
+            {
+                "categories": ["containers"],
+                "negative_categories": ["fragile"],
+                "receptacle": "middle kitchen cabinet shelf"
+            },
+            {
+                "categories": ["containers", "fragile"],
+                "receptacle": null
+            },
+            {
+                "categories": ["decor"],
+                "receptacle": "plastic bin"
+            },
+            {
+                "categories": ["pet supplies"],
+                "receptacle": "garage shelf"
+            }
+        ]
+    },
+    "low_level": {
+        "pick": [
+            {
+                "categories": ["clothing"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["footwear"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["accessories"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["dinnerware", "utensils"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["bowls"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["plates"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["drinkware"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["serveware"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["pans"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["pots"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["bakeware"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["cookware", "utensils"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["food"],
+                "negative_categories": ["disposable"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["food", "disposable"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["drinks"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["entertainment", "toys"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["entertainment", "games"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["electronics"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["work supplies"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["newspapers"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["magazines"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["books"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["tools"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["detergents"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["cleaning sprays"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["cleaning brushes"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["cleaning cloths"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["waste supplies"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["personal care"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["linens"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["sports equipment"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["containers"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["vases"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["plants"],
+                "grasp_type": "side"
+            },
+            {
+                "categories": ["ornaments"],
+                "grasp_type": "top"
+            },
+            {
+                "categories": ["pet supplies"],
+                "grasp_type": "top"
+            }
+        ],
+        "place": [
+            {
+                "categories": ["heavy"],
+                "negative_categories": ["fragile"],
+                "place_type": "gentle"
+            },
+            {
+                "categories": ["fragile"],
+                "negative_categories": ["heavy"],
+                "place_type": "gentle"
+            },
+            {
+                "categories": ["heavy", "fragile"],
+                "place_type": "gentle"
+            },
+            {
+                "categories": ["valuable"],
+                "place_type": "gentle"
+            },
+            {
+                "negative_categories": ["heavy", "fragile", "valuable"],
+                "place_type": "drop"
+            }
+        ],
+        "goto": [
+            {
+                "categories": ["disposable"],
+                "node": 52
+            },
+            {
+                "categories": ["messy"],
+                "node": 20
+            },
+            {
+                "categories": ["sharp"],
+                "node": 35
+            },
+            {
+                "categories": ["fragile"],
+                "node": 47
+            },
+            {
+                "negative_categories": ["disposable", "messy", "sharp", "fragile"],
+                "node": null
+            }
+        ]
+    }
+}

@@ -40,6 +40,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="./static/js/survey.js"></script>
+  <script src="./static/js/object_viewer.js"></script>
 </head>
 <body>
 
@@ -113,12 +114,54 @@
         
         <br/>
 
-        <!-- <h3 class="title is-4">Simulation Experiments</h3>
+        <h3 class="title is-4">Simulation Experiments</h3>
         <p>
-          TODO: Searchable object database, information on personas
+          In this section, we provide more details on our experiments in simulation.
         </p>
 
-        <br/> -->
+        <br/>
+
+        <h4 class="title is-5">Object Dataset and Personas</h4>
+        <p>
+          Below, you can look through the object dataset used in our experiments. You can also toggle between the three simulated personas to see which preferences apply to which objects.
+        </p>
+
+        <br/>
+
+        <div id="object-viewer" class="object-viewer">
+          <div class="tabs is-toggle is-small">
+            <ul id="object-viewer-personas">
+              <li class="is-active" data-persona="0"><a>Persona 1</a></li>
+              <li data-persona="1"><a>Persona 2</a></li>
+              <li data-persona="2"><a>Persona 3</a></li>
+            </ul>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input id="object-viewer-search" class="input" type="text"
+                     placeholder="Search by object name or category, e.g. fragile, heavy">
+            </div>
+            <p id="object-viewer-count" class="help"></p>
+          </div>
+          <div class="object-table-wrapper">
+            <table class="table is-striped is-hoverable is-fullwidth is-narrow">
+              <thead>
+                <tr>
+                  <th>Object</th>
+                  <th>Categories</th>
+                  <th>Receptacle</th>
+                  <th class="object-viewer-order">Order</th>
+                  <th>Grasp</th>
+                  <th>Place</th>
+                  <th>Navigation</th>
+                </tr>
+              </thead>
+              <tbody id="object-viewer-rows"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <br/>
 
         <h3 class="title is-4">Real-World User Studies</h3>
         <p>
