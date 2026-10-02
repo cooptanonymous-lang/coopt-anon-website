@@ -106,64 +106,15 @@
 
     <div class="rows is-centered ">
       <div class="row is-full-width">
-        <h2 class="title is-3">Supplementary Experimental Details</h2>
+        <!-- <h2 class="title is-3">Supplementary Experimental Details</h2>
 
         <p>
           In this section, we provide additional details regarding our experiments for reproducibility purposes.
         </p>
         
-        <br/>
+        <br/> -->
 
-        <h3 class="title is-4">Simulation Experiments</h3>
-        <p>
-          In this section, we provide more details on our experiments in simulation.
-        </p>
-
-        <br/>
-
-        <h4 class="title is-5">Object Dataset and Personas</h4>
-        <p>
-          Below, you can look through the object dataset used in our experiments. You can also toggle between the three simulated personas to see which preferences apply to which objects.
-        </p>
-
-        <br/>
-
-        <div id="object-viewer" class="object-viewer">
-          <div class="tabs is-toggle is-small">
-            <ul id="object-viewer-personas">
-              <li class="is-active" data-persona="0"><a>Persona 1</a></li>
-              <li data-persona="1"><a>Persona 2</a></li>
-              <li data-persona="2"><a>Persona 3</a></li>
-            </ul>
-          </div>
-          <div class="field">
-            <div class="control">
-              <input id="object-viewer-search" class="input" type="text"
-                     placeholder="Search by object name or category, e.g. fragile, heavy">
-            </div>
-            <p id="object-viewer-count" class="help"></p>
-          </div>
-          <div class="object-table-wrapper">
-            <table class="table is-striped is-hoverable is-fullwidth is-narrow">
-              <thead>
-                <tr>
-                  <th>Object</th>
-                  <th>Categories</th>
-                  <th>Receptacle</th>
-                  <th class="object-viewer-order">Order</th>
-                  <th>Grasp</th>
-                  <th>Place</th>
-                  <th>Navigation</th>
-                </tr>
-              </thead>
-              <tbody id="object-viewer-rows"></tbody>
-            </table>
-          </div>
-        </div>
-
-        <br/>
-
-        <h3 class="title is-4">Real-World User Studies</h3>
+        <h2 class="title is-4">Real-World User Studies</h3>
         <p>
           In this section, we give more information on the real-world user studies ran in our lab environment.
         </p>
@@ -191,7 +142,7 @@
 
         <br/>
 
-        <div id="env-carousel" class="carousel env-carousel" data-slides-to-show="1">
+        <div id="env-grid" class="env-grid">
           <div class="item">
             <img src="./static/assets/images/user_study_env1.png" alt="User study environment 1">
             <p class="env-label">Environment 1</p>
@@ -237,7 +188,7 @@
         <div id="survey-viewer" class="survey-viewer box">
 
           <div class="survey-header">
-            <h4 id="survey-page-title" class="title is-5">Page 1 of 4</h4>
+            <h4 id="survey-page-title" class="title is-5">Page 1 of 4: Measuring Human-Robot Task Fluency</h4>
             <nav id="survey-nav" class="pagination is-small is-centered"
                  role="navigation" aria-label="survey pagination">
               <button id="survey-prev" class="pagination-previous">Previous</button>
@@ -246,7 +197,7 @@
             </nav>
           </div>
 
-          <div class="survey-page" data-survey-page="1">
+          <div class="survey-page" data-survey-page="1" data-survey-title="Measuring Human-Robot Task Fluency">
             <p>
               Carefully read each statement and indicate how strongly you agree or disagree with
               the statement.
@@ -262,7 +213,7 @@
             </ol>
           </div>
 
-          <div class="survey-page is-hidden" data-survey-page="2">
+          <div class="survey-page is-hidden" data-survey-page="2" data-survey-title="Measuring User Acceptance">
             <p>
               Imagine you are working from home, doing computer-based tasks in a household
               environment. Based on this scenario, carefully read each statement and indicate how
@@ -276,7 +227,7 @@
             </ol>
           </div>
 
-          <div class="survey-page is-hidden" data-survey-page="3">
+          <div class="survey-page is-hidden" data-survey-page="3" data-survey-title="Measuring Preference Alignment">
             <p>
               In this section of the survey, you will be shown user preferences about robot
               behavior that appeared in the study. For each preference, indicate how strongly you
@@ -298,7 +249,7 @@
             </ol>
           </div>
 
-          <div class="survey-page is-hidden" data-survey-page="4">
+          <div class="survey-page is-hidden" data-survey-page="4" data-survey-title="Open-Ended Feedback">
             <p>
               Answer these short response questions to provide feedback about your experience
               today. Although you are free to answer however you want, do your best to elaborate
@@ -323,6 +274,56 @@
             </ol>
           </div>
 
+        </div>
+
+        <br/>
+        <br/>
+
+        <h2 class="title is-4">Simulation Experiments</h3>
+        <p>
+          In this section, we provide more details on our experiments in simulation.
+        </p>
+
+        <br/>
+
+        <h4 class="title is-5">Object Dataset and Personas</h4>
+        <p>
+          Below, you can look through the object dataset used in our experiments. You can also toggle between the three simulated personas to see which preferences apply to which objects.
+        </p>
+
+        <br/>
+
+        <div id="object-viewer" class="object-viewer">
+          <div class="tabs is-toggle is-small">
+            <ul id="object-viewer-personas">
+              <li class="is-active" data-persona="0"><a>Persona 1</a></li>
+              <li data-persona="1"><a>Persona 2</a></li>
+              <li data-persona="2"><a>Persona 3</a></li>
+            </ul>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input id="object-viewer-search" class="input" type="text"
+                     placeholder="Search by object name or category, e.g. fragile, heavy">
+            </div>
+            <p id="object-viewer-count" class="help"></p>
+          </div>
+          <div class="object-table-wrapper">
+            <table class="table is-striped is-hoverable is-fullwidth is-narrow">
+              <thead>
+                <tr>
+                  <th>Object</th>
+                  <th>Categories</th>
+                  <th>Receptacle</th>
+                  <th class="object-viewer-order">Order</th>
+                  <th>Grasp</th>
+                  <th>Place</th>
+                  <th>Navigation</th>
+                </tr>
+              </thead>
+              <tbody id="object-viewer-rows"></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

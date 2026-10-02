@@ -21,9 +21,11 @@ $(document).ready(function() {
     var animate = index !== current;
 
     current = index;
-    $('#survey-page-title').text('Page ' + (index + 1) + ' of ' + $pages.length);
-
     var $incoming = $pages.eq(index);
+    var title = 'Page ' + (index + 1) + ' of ' + $pages.length;
+    var subtitle = $incoming.data('survey-title');
+    $('#survey-page-title').text(subtitle ? title + ': ' + subtitle : title);
+
     $pages.not($incoming).addClass('is-hidden');
     $incoming.removeClass('is-hidden slide-from-right slide-from-left');
 
