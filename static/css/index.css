@@ -305,3 +305,96 @@ body {
   color: #888;
   font-style: italic;
 }
+
+
+/* Floating table of contents. Only shown when there is room beside the
+   content; on narrower screens it is hidden. */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.section .title[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+.toc {
+  display: none;
+}
+
+@media screen and (min-width: 1216px) {
+  .toc {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 1.25rem;
+    transform: translateY(-50%);
+    width: 180px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 30;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 0.9rem;
+  }
+}
+
+/* Reserve the TOC's width on both sides so the content never sits under it
+   and stays centered on the page. Wide screens are unaffected, since the
+   containers' max-width already leaves that much margin. */
+@media screen and (min-width: 1216px) {
+  .hero-body,
+  .section,
+  .footer {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+}
+
+.toc-title {
+  font-weight: bold;
+  color: #363636;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+}
+
+.toc ul {
+  border-left: 2px solid #dbdbdb;
+}
+
+.toc a {
+  display: block;
+  margin-left: -2px;
+  padding: 0.2em 0 0.2em 0.9em;
+  border-left: 2px solid transparent;
+  color: #7a7a7a;
+  line-height: 1.3;
+}
+
+.toc a:hover {
+  color: #363636;
+}
+
+.toc a.is-active {
+  color: hsl(204, 86%, 53%);
+  border-left-color: hsl(204, 86%, 53%);
+}
+
+.toc .toc-section a {
+  font-weight: 600;
+  margin-top: 0.4em;
+}
+
+.toc .toc-section:first-child a {
+  margin-top: 0;
+}
+
+.toc .toc-subsection a {
+  padding-left: 1.8em;
+}

@@ -41,8 +41,14 @@
   <script src="./static/js/index.js"></script>
   <script src="./static/js/survey.js"></script>
   <script src="./static/js/object_viewer.js"></script>
+  <script src="./static/js/toc.js"></script>
 </head>
 <body>
+
+<nav id="toc" class="toc" aria-label="Table of contents">
+  <p class="toc-title">Contents</p>
+  <ul id="toc-list"></ul>
+</nav>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -79,7 +85,7 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 id="abstract" class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             For safe and fluent human-robot interaction (HRI), robotic assistants must not only complete tasks but do so while respecting their user's preferences. In lifelong deployment scenarios, these preferences are often not all readily apparent and may surface in different situations. We study how a robot can continually learn these preferences while minimizing the total effort spent by the user in communicating them.
@@ -114,14 +120,14 @@
         
         <br/> -->
 
-        <h2 class="title is-4">Appendix A: Real-World User Studies</h3>
+        <h2 id="user-studies" class="title is-4">Appendix A: Real-World User Studies</h2>
         <p>
           In this section, we give more information on the real-world user studies ran in our lab environment described in Section VI of our paper. We show the environment and tasks the robot performed, the user interface the participants interacted with, and the information provided to the participants during the study (both the real-world persona and the post-experiment survey).
         </p>
 
         <br/>
 
-        <h4 class="title is-5">User Study Demonstration</h3>
+        <h4 id="user-study-demo" class="title is-5">User Study Demonstration</h4>
         <p>
           Here is an example runthrough of one environment from our user study with the user interface shown. In our study, participants completed a sequence of four environments total.
         </p>
@@ -136,7 +142,7 @@
 
         <br/>
 
-        <h4 class="title is-5">Environments and Preferences</h3>
+        <h4 id="environments" class="title is-5">Environments and Preferences</h4>
         <p>
           Below are the objects used in each of the four environments completed by the participant. We also show the description of the preferences that were given to the participant; during the experiment, the participant was told to base their corrections on these preferences.
         </p>
@@ -179,7 +185,7 @@
 
         <br/>
 
-        <h4 class="title is-5">Post-Experiment Survey Questions</h3>
+        <h4 id="survey-questions" class="title is-5">Post-Experiment Survey Questions</h4>
         <p>
           Below were the questions used in the post-experiment survey taken by the participants at the end of the study. For pages 1 to 3, participants scored each item on a scale from 1 (Strongly Disagree) to 7 (Strongly Agree).
         </p>
@@ -280,14 +286,14 @@
         <br/>
         <br/>
 
-        <h2 class="title is-4">Appendix B: Simulation Experiments</h3>
+        <h2 id="simulation" class="title is-4">Appendix B: Simulation Experiments</h2>
         <p>
           In this section, we provide more details on our experiments in simulation described in Section V of our paper. We provide details on the object dataset and personas used during evaluation.
         </p>
 
         <br/>
 
-        <h4 class="title is-5">Object Dataset and Personas</h4>
+        <h4 id="object-dataset" class="title is-5">Object Dataset and Personas</h4>
         <p>
           Below, you can look through the object dataset used in our experiments. You can also toggle between the three simulated personas to see which preferences apply to which objects.
         </p>
